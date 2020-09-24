@@ -1,0 +1,64 @@
+
+.container-fluid{
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 40vh;
+    background-color: #f1f1f1;
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 25px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color:rgb(255, 140, 26);
+    color:white;
+  }
+
+  tr{
+    
+    border:solid;
+    border-color: black;
+  }
+  
+td{
+    
+    border:solid 4px;
+    border-color: black;
+  }
+
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 10vh;
+      height: auto;
+      position: fixed;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
